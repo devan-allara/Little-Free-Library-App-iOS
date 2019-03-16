@@ -21,21 +21,19 @@
 }
 
 - (void)setupView {
-    _findLibraryButton.backgroundColor = [UIColor colorWithRed:74.0f/255.0f green:104.0f/255.0f blue:65.0f/255.0f alpha:1.0f];
-    _registerLibraryButton.backgroundColor = [UIColor colorWithRed:74.0f/255.0f green:104.0f/255.0f blue:65.0f/255.0f alpha:1.0f];
-    _findLibraryButton.layer.cornerRadius = 10; // this value vary as per your desire
-    _findLibraryButton.clipsToBounds = YES;
-    _registerLibraryButton.layer.cornerRadius = 10; // this value vary as per your desire
-    _registerLibraryButton.clipsToBounds = YES;
-    _findLibraryButton.layer.shadowColor = [UIColor blackColor].CGColor;
-    _findLibraryButton.layer.shadowOpacity = 0.5;
-    _findLibraryButton.layer.shadowRadius = 2;
-    _findLibraryButton.layer.shadowOffset = CGSizeMake(3.0f,3.0f);
-    
-    _registerLibraryButton.layer.shadowColor = [UIColor blackColor].CGColor;
-    _registerLibraryButton.layer.shadowOpacity = 0.5;
-    _registerLibraryButton.layer.shadowRadius = 2;
-    _registerLibraryButton.layer.shadowOffset = CGSizeMake(3.0f,3.0f);
+    [self configureButton:_registerLibraryButton];
+    [self configureButton:_findLibraryButton];
+}
+
+-(void)configureButton: (UIButton*)button {
+    button.backgroundColor = [UIColor colorWithRed:74.0f/255.0f green:104.0f/255.0f blue:65.0f/255.0f alpha:1.0f];
+   
+    button.layer.cornerRadius = 10; // this value vary as per your desire
+    button.clipsToBounds = YES;
+    button.layer.shadowColor = [UIColor blackColor].CGColor;
+    button.layer.shadowOpacity = 0.5;
+    button.layer.shadowRadius = 2;
+    button.layer.shadowOffset = CGSizeMake(3.0f,3.0f);
 }
 
 /*

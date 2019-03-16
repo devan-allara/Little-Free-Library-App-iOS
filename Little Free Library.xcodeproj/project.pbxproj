@@ -14,6 +14,7 @@
 		070FD0C6223D9393000A61B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070FD0C4223D9393000A61B7 /* LaunchScreen.storyboard */; };
 		070FD0C9223D9393000A61B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 070FD0C8223D9393000A61B7 /* main.m */; };
 		073036D1223D964C00A5E524 /* HomeScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073036D0223D964C00A5E524 /* HomeScreenViewController.m */; };
+		073036D4223DA93900A5E524 /* SetupScreenButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 073036D3223DA93900A5E524 /* SetupScreenButton.m */; };
 		5825BC68753C2C2046CF6886 /* libPods-Little Free Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FF5C94C26FA92E53A1AEF3 /* libPods-Little Free Library.a */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,8 @@
 		070FD0C8223D9393000A61B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		073036CF223D964C00A5E524 /* HomeScreenViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeScreenViewController.h; sourceTree = "<group>"; };
 		073036D0223D964C00A5E524 /* HomeScreenViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeScreenViewController.m; sourceTree = "<group>"; };
+		073036D2223DA93900A5E524 /* SetupScreenButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SetupScreenButton.h; sourceTree = "<group>"; };
+		073036D3223DA93900A5E524 /* SetupScreenButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SetupScreenButton.m; sourceTree = "<group>"; };
 		46FF5C94C26FA92E53A1AEF3 /* libPods-Little Free Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Little Free Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		522D172AD427775674382E9C /* Pods-Little Free Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Free Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Little Free Library/Pods-Little Free Library.debug.xcconfig"; sourceTree = "<group>"; };
 		B3EFD132DA2A12490B0C8F96 /* Pods-Little Free Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Free Library.release.xcconfig"; path = "Pods/Target Support Files/Pods-Little Free Library/Pods-Little Free Library.release.xcconfig"; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 		073036C9223D956200A5E524 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				073036D2223DA93900A5E524 /* SetupScreenButton.h */,
+				073036D3223DA93900A5E524 /* SetupScreenButton.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -247,6 +252,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				070FD0C1223D9391000A61B7 /* Little_Free_Library.xcdatamodeld in Sources */,
+				073036D4223DA93900A5E524 /* SetupScreenButton.m in Sources */,
 				073036D1223D964C00A5E524 /* HomeScreenViewController.m in Sources */,
 				070FD0C9223D9393000A61B7 /* main.m in Sources */,
 				070FD0B8223D9391000A61B7 /* AppDelegate.m in Sources */,
