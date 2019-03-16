@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UIButton *registerLibraryButton;
 - (IBAction)findLibraryButtonTapped:(id)sender;
 - (IBAction)registerLibraryButtonTapped:(id)sender;
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 
 @end

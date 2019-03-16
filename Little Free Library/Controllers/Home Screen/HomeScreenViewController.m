@@ -7,6 +7,7 @@
 //
 
 #import "HomeScreenViewController.h"
+#import <QuartzCore/QuartzCore.h>
 
 @interface HomeScreenViewController ()
 
@@ -19,8 +20,22 @@
     [self setupView];
 }
 
--(void)setupView {
-    _findLibraryButton.backgroundColor = UIColor.redColor;
+- (void)setupView {
+    _findLibraryButton.backgroundColor = [UIColor colorWithRed:74.0f/255.0f green:104.0f/255.0f blue:65.0f/255.0f alpha:1.0f];
+    _registerLibraryButton.backgroundColor = [UIColor colorWithRed:74.0f/255.0f green:104.0f/255.0f blue:65.0f/255.0f alpha:1.0f];
+    _findLibraryButton.layer.cornerRadius = 10; // this value vary as per your desire
+    _findLibraryButton.clipsToBounds = YES;
+    _registerLibraryButton.layer.cornerRadius = 10; // this value vary as per your desire
+    _registerLibraryButton.clipsToBounds = YES;
+    _findLibraryButton.layer.shadowColor = [UIColor blackColor].CGColor;
+    _findLibraryButton.layer.shadowOpacity = 0.5;
+    _findLibraryButton.layer.shadowRadius = 2;
+    _findLibraryButton.layer.shadowOffset = CGSizeMake(3.0f,3.0f);
+    
+    _registerLibraryButton.layer.shadowColor = [UIColor blackColor].CGColor;
+    _registerLibraryButton.layer.shadowOpacity = 0.5;
+    _registerLibraryButton.layer.shadowRadius = 2;
+    _registerLibraryButton.layer.shadowOffset = CGSizeMake(3.0f,3.0f);
 }
 
 /*
