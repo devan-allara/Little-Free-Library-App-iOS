@@ -14,6 +14,7 @@
 		070FD0C3223D9393000A61B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 070FD0C2223D9393000A61B7 /* Assets.xcassets */; };
 		070FD0C6223D9393000A61B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 070FD0C4223D9393000A61B7 /* LaunchScreen.storyboard */; };
 		070FD0C9223D9393000A61B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 070FD0C8223D9393000A61B7 /* main.m */; };
+		5825BC68753C2C2046CF6886 /* libPods-Little Free Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FF5C94C26FA92E53A1AEF3 /* libPods-Little Free Library.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,9 @@
 		070FD0C5223D9393000A61B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		070FD0C7223D9393000A61B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		070FD0C8223D9393000A61B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		46FF5C94C26FA92E53A1AEF3 /* libPods-Little Free Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Little Free Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		522D172AD427775674382E9C /* Pods-Little Free Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Free Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Little Free Library/Pods-Little Free Library.debug.xcconfig"; sourceTree = "<group>"; };
+		B3EFD132DA2A12490B0C8F96 /* Pods-Little Free Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Free Library.release.xcconfig"; path = "Pods/Target Support Files/Pods-Little Free Library/Pods-Little Free Library.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5825BC68753C2C2046CF6886 /* libPods-Little Free Library.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,6 +51,8 @@
 			children = (
 				070FD0B5223D9391000A61B7 /* Little Free Library */,
 				070FD0B4223D9391000A61B7 /* Products */,
+				5F16EF3DE03D37FD5D8B98A6 /* Pods */,
+				5F4DF8CEE1D9544BD6C8A206 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +81,23 @@
 			path = "Little Free Library";
 			sourceTree = "<group>";
 		};
+		5F16EF3DE03D37FD5D8B98A6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				522D172AD427775674382E9C /* Pods-Little Free Library.debug.xcconfig */,
+				B3EFD132DA2A12490B0C8F96 /* Pods-Little Free Library.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F4DF8CEE1D9544BD6C8A206 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46FF5C94C26FA92E53A1AEF3 /* libPods-Little Free Library.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -81,6 +105,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 070FD0CC223D9393000A61B7 /* Build configuration list for PBXNativeTarget "Little Free Library" */;
 			buildPhases = (
+				94D5AA0C5DFF7F5607B1FDC1 /* [CP] Check Pods Manifest.lock */,
 				070FD0AF223D9391000A61B7 /* Sources */,
 				070FD0B0223D9391000A61B7 /* Frameworks */,
 				070FD0B1223D9391000A61B7 /* Resources */,
@@ -138,6 +163,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		94D5AA0C5DFF7F5607B1FDC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Little Free Library-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		070FD0AF223D9391000A61B7 /* Sources */ = {
@@ -287,15 +333,13 @@
 		};
 		070FD0CD223D9393000A61B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 522D172AD427775674382E9C /* Pods-Little Free Library.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9QV58MHM6;
 				INFOPLIST_FILE = "Little Free Library/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Devan.Little-Free-Library";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -304,15 +348,13 @@
 		};
 		070FD0CE223D9393000A61B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B3EFD132DA2A12490B0C8F96 /* Pods-Little Free Library.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = W9QV58MHM6;
 				INFOPLIST_FILE = "Little Free Library/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Devan.Little-Free-Library";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
