@@ -20,6 +20,12 @@
 		073036DE223FF27400A5E524 /* SegueFromLeft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073036DD223FF27400A5E524 /* SegueFromLeft.swift */; };
 		073036E0223FF3CB00A5E524 /* SegueFromRight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 073036DF223FF3CB00A5E524 /* SegueFromRight.swift */; };
 		073036E2225FB0DA00A5E524 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 073036E1225FB0DA00A5E524 /* GoogleService-Info.plist */; };
+		073036E5225FB85600A5E524 /* RegisterLibraryLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073036E4225FB85600A5E524 /* RegisterLibraryLocation.storyboard */; };
+		073036E7225FBA7D00A5E524 /* RegisterLibraryName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073036E6225FBA7D00A5E524 /* RegisterLibraryName.storyboard */; };
+		073036E9225FC84F00A5E524 /* RegisterLibraryImage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073036E8225FC84F00A5E524 /* RegisterLibraryImage.storyboard */; };
+		073036ED225FCB6B00A5E524 /* RegisterLibraryNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073036EC225FCB6B00A5E524 /* RegisterLibraryNameViewController.m */; };
+		073036F0225FCB8100A5E524 /* RegisterLibraryLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073036EF225FCB8100A5E524 /* RegisterLibraryLocationViewController.m */; };
+		073036F3225FCB9700A5E524 /* RegisterLibraryImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 073036F2225FCB9700A5E524 /* RegisterLibraryImageViewController.m */; };
 		5825BC68753C2C2046CF6886 /* libPods-Little Free Library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46FF5C94C26FA92E53A1AEF3 /* libPods-Little Free Library.a */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +50,15 @@
 		073036DD223FF27400A5E524 /* SegueFromLeft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromLeft.swift; sourceTree = "<group>"; };
 		073036DF223FF3CB00A5E524 /* SegueFromRight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegueFromRight.swift; sourceTree = "<group>"; };
 		073036E1225FB0DA00A5E524 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		073036E4225FB85600A5E524 /* RegisterLibraryLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterLibraryLocation.storyboard; sourceTree = "<group>"; };
+		073036E6225FBA7D00A5E524 /* RegisterLibraryName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterLibraryName.storyboard; sourceTree = "<group>"; };
+		073036E8225FC84F00A5E524 /* RegisterLibraryImage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RegisterLibraryImage.storyboard; sourceTree = "<group>"; };
+		073036EB225FCB6B00A5E524 /* RegisterLibraryNameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterLibraryNameViewController.h; sourceTree = "<group>"; };
+		073036EC225FCB6B00A5E524 /* RegisterLibraryNameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterLibraryNameViewController.m; sourceTree = "<group>"; };
+		073036EE225FCB8100A5E524 /* RegisterLibraryLocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterLibraryLocationViewController.h; sourceTree = "<group>"; };
+		073036EF225FCB8100A5E524 /* RegisterLibraryLocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterLibraryLocationViewController.m; sourceTree = "<group>"; };
+		073036F1225FCB9700A5E524 /* RegisterLibraryImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RegisterLibraryImageViewController.h; sourceTree = "<group>"; };
+		073036F2225FCB9700A5E524 /* RegisterLibraryImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RegisterLibraryImageViewController.m; sourceTree = "<group>"; };
 		46FF5C94C26FA92E53A1AEF3 /* libPods-Little Free Library.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Little Free Library.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		522D172AD427775674382E9C /* Pods-Little Free Library.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Free Library.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Little Free Library/Pods-Little Free Library.debug.xcconfig"; sourceTree = "<group>"; };
 		B3EFD132DA2A12490B0C8F96 /* Pods-Little Free Library.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Little Free Library.release.xcconfig"; path = "Pods/Target Support Files/Pods-Little Free Library/Pods-Little Free Library.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +110,7 @@
 		073036C8223D955100A5E524 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				073036E3225FB81C00A5E524 /* Register Library */,
 				073036D5223FD2C900A5E524 /* Find Library Setup */,
 				073036CD223D961400A5E524 /* Home Screen */,
 				073036CC223D95EC00A5E524 /* Launch Screen */,
@@ -117,6 +133,7 @@
 		073036CA223D956800A5E524 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				073036EA225FCB4C00A5E524 /* Register New Library Setup */,
 				073036D8223FEBC000A5E524 /* Find Library Setup */,
 				073036CE223D962300A5E524 /* Home Screen */,
 			);
@@ -175,6 +192,29 @@
 				073036DA223FEBE500A5E524 /* FindLibrarySetupViewController.m */,
 			);
 			path = "Find Library Setup";
+			sourceTree = "<group>";
+		};
+		073036E3225FB81C00A5E524 /* Register Library */ = {
+			isa = PBXGroup;
+			children = (
+				073036E6225FBA7D00A5E524 /* RegisterLibraryName.storyboard */,
+				073036E4225FB85600A5E524 /* RegisterLibraryLocation.storyboard */,
+				073036E8225FC84F00A5E524 /* RegisterLibraryImage.storyboard */,
+			);
+			path = "Register Library";
+			sourceTree = "<group>";
+		};
+		073036EA225FCB4C00A5E524 /* Register New Library Setup */ = {
+			isa = PBXGroup;
+			children = (
+				073036EB225FCB6B00A5E524 /* RegisterLibraryNameViewController.h */,
+				073036EC225FCB6B00A5E524 /* RegisterLibraryNameViewController.m */,
+				073036EE225FCB8100A5E524 /* RegisterLibraryLocationViewController.h */,
+				073036EF225FCB8100A5E524 /* RegisterLibraryLocationViewController.m */,
+				073036F1225FCB9700A5E524 /* RegisterLibraryImageViewController.h */,
+				073036F2225FCB9700A5E524 /* RegisterLibraryImageViewController.m */,
+			);
+			path = "Register New Library Setup";
 			sourceTree = "<group>";
 		};
 		5F16EF3DE03D37FD5D8B98A6 /* Pods */ = {
@@ -256,8 +296,11 @@
 				070FD0C6223D9393000A61B7 /* LaunchScreen.storyboard in Resources */,
 				073036D7223FD2E700A5E524 /* FindLibrarySetup.storyboard in Resources */,
 				073036E2225FB0DA00A5E524 /* GoogleService-Info.plist in Resources */,
+				073036E9225FC84F00A5E524 /* RegisterLibraryImage.storyboard in Resources */,
 				070FD0C3223D9393000A61B7 /* Assets.xcassets in Resources */,
 				070FD0BE223D9391000A61B7 /* HomeScreen.storyboard in Resources */,
+				073036E7225FBA7D00A5E524 /* RegisterLibraryName.storyboard in Resources */,
+				073036E5225FB85600A5E524 /* RegisterLibraryLocation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,10 +334,13 @@
 			files = (
 				070FD0C1223D9391000A61B7 /* Little_Free_Library.xcdatamodeld in Sources */,
 				073036D4223DA93900A5E524 /* SetupScreenButton.m in Sources */,
+				073036F0225FCB8100A5E524 /* RegisterLibraryLocationViewController.m in Sources */,
 				073036E0223FF3CB00A5E524 /* SegueFromRight.swift in Sources */,
+				073036F3225FCB9700A5E524 /* RegisterLibraryImageViewController.m in Sources */,
 				073036DE223FF27400A5E524 /* SegueFromLeft.swift in Sources */,
 				073036DB223FEBE500A5E524 /* FindLibrarySetupViewController.m in Sources */,
 				073036D1223D964C00A5E524 /* HomeScreenViewController.m in Sources */,
+				073036ED225FCB6B00A5E524 /* RegisterLibraryNameViewController.m in Sources */,
 				070FD0C9223D9393000A61B7 /* main.m in Sources */,
 				070FD0B8223D9391000A61B7 /* AppDelegate.m in Sources */,
 			);
