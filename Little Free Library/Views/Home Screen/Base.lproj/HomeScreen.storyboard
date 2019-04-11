@@ -53,12 +53,14 @@
                                 </state>
                                 <connections>
                                     <action selector="findLibraryButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yM0-WN-dwU"/>
+                                    <segue destination="Y50-ft-quM" kind="custom" identifier="FindLibraryzSegue" customClass="SegueFromLeft" customModule="Little_Free_Library" customModuleProvider="target" id="oq0-xK-6hU"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Lc6-9q-7vO"/>
                     <connections>
                         <outlet property="findLibraryButton" destination="NQK-Zd-Puf" id="88Q-xk-neW"/>
                         <outlet property="pageControl" destination="BUE-Do-9OC" id="De3-lP-WSo"/>
@@ -67,7 +69,17 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53.600000000000001" y="22.906403940886701"/>
+            <point key="canvasLocation" x="996" y="22.906403940886701"/>
+        </scene>
+        <!--FindLibrarySetup-->
+        <scene sceneID="t6j-2T-GVv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="FindLibrarySetup" id="Y50-ft-quM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0iC-iJ-u2b"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uxl-k2-2lY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="22.906403940886701"/>
         </scene>
     </scenes>
     <resources>
