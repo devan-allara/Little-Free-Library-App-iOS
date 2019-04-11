@@ -7,5 +7,6 @@ target 'Little Free Library' do
 
   # Pods for Little Free Library
   pod "AFNetworking", "~> 2.0"
-  
+  pod "Firebase/Core"  
 end
+

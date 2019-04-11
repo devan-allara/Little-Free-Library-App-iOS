@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "HomeScreenViewController.h"
+#import <Firebase/Firebase.h>
+
+
 
 @interface AppDelegate ()
 
@@ -17,12 +20,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    //Configures firebase: DONT DELETE
+    [FIRApp configure];
+    /* This allows us to change the first screen of the app depending on if this is the first boot off the app or not. If the user has not configured their location/account this will take the user to the setup screen otherwise the user should be redirected to the home screen.
+        TODO: Store user preferences in realm or coredata?
+    */
     self.window = [[UIWindow alloc] initWithFrame:UIScreen.mainScreen.bounds];
-    
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"HomeScreen" bundle:nil];
-    
     HomeScreenViewController *viewController = [storyboard instantiateViewControllerWithIdentifier: @"HomeScreenStoryboard"];
-    
     self.window.rootViewController = viewController;
     [self.window makeKeyAndVisible];
     
@@ -105,3 +110,5 @@
 }
 
 @end
+
+
